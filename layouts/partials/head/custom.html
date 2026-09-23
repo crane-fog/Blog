@@ -1,0 +1,64 @@
+<style>
+    .article-content .highlight,
+    .highlight {
+        position: relative !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        margin: 1.5rem 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .article-content .highlight pre,
+    .highlight pre,
+    .highlight .chroma {
+        border-radius: 8px !important;
+        margin: 0 !important;
+        padding: 1.2rem 1.4rem !important;
+        font-family: "Consolas", "JetBrains Mono", "monospace" !important;
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        overflow-x: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    .highlight .copyCodeButton {
+        position: absolute !important;
+        top: 8px !important;
+        right: 8px !important;
+        z-index: 10 !important;
+        font-size: 0 !important;
+        color: transparent !important;
+        line-height: 0 !important;
+        width: 32px !important;
+        height: 32px !important;
+        border-radius: 6px !important;
+        cursor: pointer !important;
+        background-color: rgba(255, 255, 255, 0.16) !important;
+        border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        backdrop-filter: blur(4px) !important;
+        opacity: 0.75 !important;
+        /* 4. 插入亮白色的经典剪贴板 SVG 图标 */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='14' height='14' x='8' y='8' rx='2' ry='2'/%3E%3Cpath d='M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2'/%3E%3C/svg%3E") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: 16px 16px !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .highlight .copyCodeButton:hover {
+        opacity: 1 !important;
+        background-color: rgba(255, 255, 255, 0.28) !important;
+        border-color: rgba(255, 255, 255, 0.5) !important;
+        transform: scale(1.08) !important;
+    }
+
+    .highlight .copyCodeButton:active {
+        transform: scale(0.95) !important;
+        background-color: rgba(255, 255, 255, 0.4) !important;
+    }
+</style>

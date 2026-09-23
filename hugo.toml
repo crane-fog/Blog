@@ -1,0 +1,14 @@
+baseURL = 'https://blog.xheai.com/'
+locale = 'zh-cn'
+title = 'Heai Blog'
+theme = 'hugo-theme-stack'
+
+[markup]
+  [markup.highlight]
+    noClasses = true
+    lineNos = true
+    style = "catppuccin-mocha"
+    guessSyntax = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
