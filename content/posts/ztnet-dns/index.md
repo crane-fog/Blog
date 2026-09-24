@@ -1,6 +1,7 @@
 +++
 date = '2026-09-20T10:01:51+08:00'
 title = 'ztnet 内网 DNS 服务搭建'
+weight = -1
 categories = ['Network']
 tags = ['ZeroTier', 'Nginx', 'DNS']
 +++

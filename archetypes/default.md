@@ -1,5 +1,9 @@
 +++
 date = '{{ .Date }}'
-draft = true
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+image = 'cover.png'
+description = ''
+weight = -1
+categories = []
+tags = []
 +++

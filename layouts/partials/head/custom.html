@@ -6,7 +6,7 @@
         box-shadow: none !important;
         background: transparent !important;
         border-radius: 8px !important;
-        overflow: hidden !important;
+        overflow: auto !important;
         margin: 1.5rem 0 !important;
         padding: 0 !important;
         width: 100% !important;
@@ -18,7 +18,7 @@
     .highlight .chroma {
         border-radius: 8px !important;
         margin: 0 !important;
-        padding: 1.2rem 1.4rem !important;
+        padding: 2.5rem 0rem 1rem 0.5rem !important;
         font-family: "Consolas", "JetBrains Mono", "monospace" !important;
         font-size: 14px !important;
         line-height: 1.6 !important;
@@ -42,7 +42,6 @@
         border: 1px solid rgba(255, 255, 255, 0.3) !important;
         backdrop-filter: blur(4px) !important;
         opacity: 0.75 !important;
-        /* 4. 插入亮白色的经典剪贴板 SVG 图标 */
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='14' height='14' x='8' y='8' rx='2' ry='2'/%3E%3Cpath d='M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2'/%3E%3C/svg%3E") !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
@@ -60,5 +59,21 @@
     .highlight .copyCodeButton:active {
         transform: scale(0.95) !important;
         background-color: rgba(255, 255, 255, 0.4) !important;
+    }
+
+    .highlight code[data-lang]:not([data-lang=""])::before {
+    content: attr(data-lang);
+    position: absolute !important;
+    top: 4px !important;
+    left: 10px !important;
+    font-size: 14px !important;
+    }
+
+    .highlight pre,
+    .highlight pre code {
+        white-space: pre !important;
+        word-break: normal !important;
+        word-wrap: normal !important;
+        overflow-x: auto !important;
     }
 </style>
